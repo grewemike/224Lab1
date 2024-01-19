@@ -1,35 +1,46 @@
-<!-- FILEPATH: Untitled-1 -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>HTML Form</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+       body {
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: white; 
         }
         form {
             width: 300px;
             margin: 0 auto;
         }
+        h1 {
+        text-align: center;
+        color: #F0E68C; 
+        font-size: 2.5em; 
+        margin-bottom: 20px; 
+}
         label {
-            display: block;
-            margin-bottom: 10px;
-        }
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.2em; 
+        color: #F0E68C; 
+        font-weight: bold; 
+}
         input[type="text"], input[type="email"], input[type="password"] {
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
-            border-radius: 5px;
+            border-radius: 30px;
             border: 1px solid #ccc;
         }
         input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+        background-color: #4CAF50;
+        color: white;
+        font-size: large;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+}
     </style>
         <script>
             function validateForm() {
@@ -46,6 +57,7 @@
         </script>
 </head>
 <body>
+    <h1>HTML Form</h1>
     <form onsubmit="return validateForm()">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
