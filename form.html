@@ -31,9 +31,20 @@
             cursor: pointer;
         }
     </style>
+        <script>
+            function validateForm() {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+    
+                if (name == "" || email == "") {
+                    document.getElementById('error').innerHTML = "All fields are required.";
+                    return false;
+                }
+            }
+        </script>
 </head>
 <body>
-    <form>
+    <form onsubmit="return validateForm()">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
         
